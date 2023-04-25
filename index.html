@@ -64,6 +64,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    
+	     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce:
+     {
+      transaction_id: "ITM_12345",
+
+     currency: "INR",
+
+      value: 100,
+         
+      tax: 100,
+
+      shipping: "MOOC",
+      
+      items:[
+          {
+              item_id: "SFV_235",
+              item_name: "PYTHON",
+           affiliation: "xyzc",
+		  currency:"INR"
+          },
+          {
+               item_id: "TEV_665",
+              item_name: "JAVA",
+             affiliation: "abc",
+		  currency:"INR"
+          }]
+    
+    }
+});
 	    </script>
 	
     <title>Course Page</title>
